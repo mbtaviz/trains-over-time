@@ -1,0 +1,818 @@
+{
+  "nodes": [
+    {
+      "id": "place-knncl",
+      "code": "",
+      "name": "Kendall/MIT Station",
+      "lat": "42.36249079",
+      "lon": "-71.08617653",
+      "parent_station": ""
+    },
+    {
+      "id": "place-asmnl",
+      "code": "",
+      "name": "Ashmont Station",
+      "lat": "42.284652",
+      "lon": "-71.064489",
+      "parent_station": ""
+    },
+    {
+      "id": "place-fldcr",
+      "code": "",
+      "name": "Fields Corner Station",
+      "lat": "42.300093",
+      "lon": "-71.061667",
+      "parent_station": ""
+    },
+    {
+      "id": "place-shmnl",
+      "code": "",
+      "name": "Savin Hill Station",
+      "lat": "42.31129",
+      "lon": "-71.053331",
+      "parent_station": ""
+    },
+    {
+      "id": "place-jfk",
+      "code": "",
+      "name": "JFK/UMass Station",
+      "lat": "42.320685",
+      "lon": "-71.052391",
+      "parent_station": ""
+    },
+    {
+      "id": "place-andrw",
+      "code": "",
+      "name": "Andrew Station",
+      "lat": "42.330154",
+      "lon": "-71.057655",
+      "parent_station": ""
+    },
+    {
+      "id": "place-brdwy",
+      "code": "",
+      "name": "Broadway Station",
+      "lat": "42.342622",
+      "lon": "-71.056967",
+      "parent_station": ""
+    },
+    {
+      "id": "place-sstat",
+      "code": "",
+      "name": "South Station",
+      "lat": "42.352271",
+      "lon": "-71.055242",
+      "parent_station": ""
+    },
+    {
+      "id": "place-dwnxg",
+      "code": "",
+      "name": "Downtown Crossing Station",
+      "lat": "42.355518",
+      "lon": "-71.060225",
+      "parent_station": ""
+    },
+    {
+      "id": "place-pktrm",
+      "code": "",
+      "name": "Park St. Station",
+      "lat": "42.35639457",
+      "lon": "-71.0624242",
+      "parent_station": ""
+    },
+    {
+      "id": "place-chmnl",
+      "code": "",
+      "name": "Charles/MGH Station",
+      "lat": "42.361166",
+      "lon": "-71.070628",
+      "parent_station": ""
+    },
+    {
+      "id": "place-smmnl",
+      "code": "",
+      "name": "Shawmut Station",
+      "lat": "42.29312583",
+      "lon": "-71.06573796",
+      "parent_station": ""
+    },
+    {
+      "id": "place-cntsq",
+      "code": "",
+      "name": "Central Square Station",
+      "lat": "42.365486",
+      "lon": "-71.103802",
+      "parent_station": ""
+    },
+    {
+      "id": "place-harsq",
+      "code": "",
+      "name": "Harvard Square Station",
+      "lat": "42.373362",
+      "lon": "-71.118956",
+      "parent_station": ""
+    },
+    {
+      "id": "place-portr",
+      "code": "",
+      "name": "Porter Square Station",
+      "lat": "42.3884",
+      "lon": "-71.119149",
+      "parent_station": ""
+    },
+    {
+      "id": "place-davis",
+      "code": "",
+      "name": "Davis Station",
+      "lat": "42.39674",
+      "lon": "-71.121815",
+      "parent_station": ""
+    },
+    {
+      "id": "place-alfcl",
+      "code": "",
+      "name": "Alewife Station",
+      "lat": "42.395428",
+      "lon": "-71.142483",
+      "parent_station": ""
+    },
+    {
+      "id": "place-nqncy",
+      "code": "",
+      "name": "North Quincy Station",
+      "lat": "42.275275",
+      "lon": "-71.029583",
+      "parent_station": ""
+    },
+    {
+      "id": "place-wlsta",
+      "code": "",
+      "name": "Wollaston Station",
+      "lat": "42.2665139",
+      "lon": "-71.0203369",
+      "parent_station": ""
+    },
+    {
+      "id": "place-qnctr",
+      "code": "",
+      "name": "Quincy Center Station",
+      "lat": "42.251809",
+      "lon": "-71.005409",
+      "parent_station": ""
+    },
+    {
+      "id": "place-qamnl",
+      "code": "",
+      "name": "Quincy Adams Station",
+      "lat": "42.233391",
+      "lon": "-71.007153",
+      "parent_station": ""
+    },
+    {
+      "id": "place-brntn",
+      "code": "",
+      "name": "Braintree Station",
+      "lat": "42.2078543",
+      "lon": "-71.0011385",
+      "parent_station": ""
+    },
+    {
+      "id": "place-chncl",
+      "code": "",
+      "name": "Chinatown Station",
+      "lat": "42.352547",
+      "lon": "-71.062752",
+      "parent_station": ""
+    },
+    {
+      "id": "place-forhl",
+      "code": "",
+      "name": "Forest Hills Station",
+      "lat": "42.300523",
+      "lon": "-71.113686",
+      "parent_station": ""
+    },
+    {
+      "id": "place-sbmnl",
+      "code": "",
+      "name": "Stony Brook Station",
+      "lat": "42.317062",
+      "lon": "-71.104248",
+      "parent_station": ""
+    },
+    {
+      "id": "place-jaksn",
+      "code": "",
+      "name": "Jackson Square Station",
+      "lat": "42.323132",
+      "lon": "-71.099592",
+      "parent_station": ""
+    },
+    {
+      "id": "place-rcmnl",
+      "code": "",
+      "name": "Roxbury Crossing Station",
+      "lat": "42.331397",
+      "lon": "-71.095451",
+      "parent_station": ""
+    },
+    {
+      "id": "place-rugg",
+      "code": "",
+      "name": "Ruggles Station",
+      "lat": "42.336377",
+      "lon": "-71.088961",
+      "parent_station": ""
+    },
+    {
+      "id": "place-masta",
+      "code": "",
+      "name": "Massachusetts Ave. Station",
+      "lat": "42.341512",
+      "lon": "-71.083423",
+      "parent_station": ""
+    },
+    {
+      "id": "place-bbsta",
+      "code": "",
+      "name": "Back Bay Station",
+      "lat": "42.34735",
+      "lon": "-71.075727",
+      "parent_station": ""
+    },
+    {
+      "id": "place-tumnl",
+      "code": "",
+      "name": "Tufts Medical Center Station",
+      "lat": "42.349662",
+      "lon": "-71.063917",
+      "parent_station": ""
+    },
+    {
+      "id": "place-grnst",
+      "code": "",
+      "name": "Green St. Station",
+      "lat": "42.310525",
+      "lon": "-71.107414",
+      "parent_station": ""
+    },
+    {
+      "id": "place-state",
+      "code": "",
+      "name": "State St. Station",
+      "lat": "42.358978",
+      "lon": "-71.057598",
+      "parent_station": ""
+    },
+    {
+      "id": "place-haecl",
+      "code": "",
+      "name": "Haymarket Station",
+      "lat": "42.363021",
+      "lon": "-71.05829",
+      "parent_station": ""
+    },
+    {
+      "id": "place-north",
+      "code": "",
+      "name": "North Station",
+      "lat": "42.365577",
+      "lon": "-71.06129",
+      "parent_station": ""
+    },
+    {
+      "id": "place-ccmnl",
+      "code": "",
+      "name": "Community College Station",
+      "lat": "42.373622",
+      "lon": "-71.069533",
+      "parent_station": ""
+    },
+    {
+      "id": "place-sull",
+      "code": "",
+      "name": "Sullivan Station",
+      "lat": "42.383975",
+      "lon": "-71.076994",
+      "parent_station": ""
+    },
+    {
+      "id": "place-welln",
+      "code": "",
+      "name": "Wellington Station",
+      "lat": "42.40237",
+      "lon": "-71.077082",
+      "parent_station": ""
+    },
+    {
+      "id": "place-mlmnl",
+      "code": "",
+      "name": "Malden Center Station",
+      "lat": "42.426632",
+      "lon": "-71.07411",
+      "parent_station": ""
+    },
+    {
+      "id": "place-ogmnl",
+      "code": "",
+      "name": "Oak Grove Station",
+      "lat": "42.43668",
+      "lon": "-71.071097",
+      "parent_station": ""
+    },
+    {
+      "id": "place-aport",
+      "code": "",
+      "name": "Airport Station",
+      "lat": "42.374262",
+      "lon": "-71.030395",
+      "parent_station": ""
+    },
+    {
+      "id": "place-wondl",
+      "code": "",
+      "name": "Wonderland Station",
+      "lat": "42.41342",
+      "lon": "-70.991648",
+      "parent_station": ""
+    },
+    {
+      "id": "place-bmmnl",
+      "code": "",
+      "name": "Beachmont Station",
+      "lat": "42.39754234",
+      "lon": "-70.99231944",
+      "parent_station": ""
+    },
+    {
+      "id": "place-sdmnl",
+      "code": "",
+      "name": "Suffolk Downs Station",
+      "lat": "42.39050067",
+      "lon": "-70.99712259",
+      "parent_station": ""
+    },
+    {
+      "id": "place-orhte",
+      "code": "",
+      "name": "Orient Heights Station",
+      "lat": "42.386867",
+      "lon": "-71.004736",
+      "parent_station": ""
+    },
+    {
+      "id": "place-wimnl",
+      "code": "",
+      "name": "Wood Island Station",
+      "lat": "42.3796403",
+      "lon": "-71.02286539",
+      "parent_station": ""
+    },
+    {
+      "id": "place-rbmnl",
+      "code": "",
+      "name": "Revere Beach Station",
+      "lat": "42.40784254",
+      "lon": "-70.99253321",
+      "parent_station": ""
+    },
+    {
+      "id": "place-mvbcl",
+      "code": "",
+      "name": "Maverick Station",
+      "lat": "42.36911856",
+      "lon": "-71.03952958",
+      "parent_station": ""
+    },
+    {
+      "id": "place-aqucl",
+      "code": "",
+      "name": "Aquarium Station",
+      "lat": "42.359784",
+      "lon": "-71.051652",
+      "parent_station": ""
+    },
+    {
+      "id": "place-gover",
+      "code": "",
+      "name": "Government Center Station",
+      "lat": "42.359705",
+      "lon": "-71.059215",
+      "parent_station": ""
+    },
+    {
+      "id": "place-bomnl",
+      "code": "",
+      "name": "Bowdoin Station",
+      "lat": "42.361365",
+      "lon": "-71.062037",
+      "parent_station": ""
+    }
+  ],
+  "links": [
+    {
+      "source": 5,
+      "target": 6,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 1,
+      "target": 11,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 21,
+      "target": 20,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 10,
+      "target": 0,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 0,
+      "target": 12,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 17,
+      "target": 4,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 20,
+      "target": 19,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 19,
+      "target": 18,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 18,
+      "target": 17,
+      "line": "red",
+      "color": "E12D27"
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "line": "orange",
+      "color": "E87200"
+    },
+    {
+      "source": 35,
+      "target": 36,
+      "line": "orange",
+      "color": "E87200"
+    },
+    {
+      "source": 22,
+      "target": 8,
+      "line": "orange",
+      "color": "E87200"
+    },
+    {
+      "source": 8,
+      "target": 32,
+      "line": "orange",
+      "color": "E87200"
+    },
+    {
+      "source": 23,
+      "target": 31,
+      "line": "orange",
+      "color": "E87200"
+    },
+    {
+      "source": 31,
+      "target": 24,
+      "line": "orange",
+      "color": "E87200"
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "line": "orange",
+      "color": "E87200"
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "line": "orange",
+      "color": "E87200"
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "line": "orange",
+      "color": "E87200"
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "line": "orange",
+      "color": "E87200"
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "line": "orange",
+      "color": "E87200"
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "line": "orange",
+      "color": "E87200"
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "line": "orange",
+      "color": "E87200"
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "line": "orange",
+      "color": "E87200"
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "line": "orange",
+      "color": "E87200"
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "line": "orange",
+      "color": "E87200"
+    },
+    {
+      "source": 30,
+      "target": 22,
+      "line": "orange",
+      "color": "E87200"
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "line": "orange",
+      "color": "E87200"
+    },
+    {
+      "source": 40,
+      "target": 45,
+      "line": "blue",
+      "color": "2F5DA6"
+    },
+    {
+      "source": 48,
+      "target": 47,
+      "line": "blue",
+      "color": "2F5DA6"
+    },
+    {
+      "source": 42,
+      "target": 46,
+      "line": "blue",
+      "color": "2F5DA6"
+    },
+    {
+      "source": 50,
+      "target": 49,
+      "line": "blue",
+      "color": "2F5DA6"
+    },
+    {
+      "source": 49,
+      "target": 32,
+      "line": "blue",
+      "color": "2F5DA6"
+    },
+    {
+      "source": 47,
+      "target": 40,
+      "line": "blue",
+      "color": "2F5DA6"
+    },
+    {
+      "source": 44,
+      "target": 43,
+      "line": "blue",
+      "color": "2F5DA6"
+    },
+    {
+      "source": 46,
+      "target": 41,
+      "line": "blue",
+      "color": "2F5DA6"
+    },
+    {
+      "source": 43,
+      "target": 42,
+      "line": "blue",
+      "color": "2F5DA6"
+    },
+    {
+      "source": 32,
+      "target": 48,
+      "line": "blue",
+      "color": "2F5DA6"
+    },
+    {
+      "source": 45,
+      "target": 44,
+      "line": "blue",
+      "color": "2F5DA6"
+    }
+  ],
+  "parentStops": {
+    "70001": "place-forhl",
+    "70002": "place-grnst",
+    "70003": "place-grnst",
+    "70004": "place-sbmnl",
+    "70005": "place-sbmnl",
+    "70006": "place-jaksn",
+    "70007": "place-jaksn",
+    "70008": "place-rcmnl",
+    "70009": "place-rcmnl",
+    "70010": "place-rugg",
+    "70011": "place-rugg",
+    "70012": "place-masta",
+    "70013": "place-masta",
+    "70014": "place-bbsta",
+    "70015": "place-bbsta",
+    "70016": "place-tumnl",
+    "70017": "place-tumnl",
+    "70018": "place-chncl",
+    "70019": "place-chncl",
+    "70020": "place-dwnxg",
+    "70021": "place-dwnxg",
+    "70022": "place-state",
+    "70023": "place-state",
+    "70024": "place-haecl",
+    "70025": "place-haecl",
+    "70026": "place-north",
+    "70027": "place-north",
+    "70028": "place-ccmnl",
+    "70029": "place-ccmnl",
+    "70030": "place-sull",
+    "70031": "place-sull",
+    "70032": "place-welln",
+    "70033": "place-welln",
+    "70034": "place-mlmnl",
+    "70035": "place-mlmnl",
+    "70036": "place-ogmnl",
+    "70038": "place-bomnl",
+    "70039": "place-gover",
+    "70040": "place-gover",
+    "70041": "place-state",
+    "70042": "place-state",
+    "70043": "place-aqucl",
+    "70044": "place-aqucl",
+    "70045": "place-mvbcl",
+    "70046": "place-mvbcl",
+    "70047": "place-aport",
+    "70048": "place-aport",
+    "70049": "place-wimnl",
+    "70050": "place-wimnl",
+    "70051": "place-orhte",
+    "70052": "place-orhte",
+    "70053": "place-sdmnl",
+    "70054": "place-sdmnl",
+    "70055": "place-bmmnl",
+    "70056": "place-bmmnl",
+    "70057": "place-rbmnl",
+    "70058": "place-rbmnl",
+    "70060": "place-wondl",
+    "70061": "place-alfcl",
+    "70063": "place-davis",
+    "70064": "place-davis",
+    "70065": "place-portr",
+    "70066": "place-portr",
+    "70067": "place-harsq",
+    "70068": "place-harsq",
+    "70069": "place-cntsq",
+    "70070": "place-cntsq",
+    "70071": "place-knncl",
+    "70072": "place-knncl",
+    "70073": "place-chmnl",
+    "70074": "place-chmnl",
+    "70075": "place-pktrm",
+    "70076": "place-pktrm",
+    "70077": "place-dwnxg",
+    "70078": "place-dwnxg",
+    "70079": "place-sstat",
+    "70080": "place-sstat",
+    "70081": "place-brdwy",
+    "70082": "place-brdwy",
+    "70083": "place-andrw",
+    "70084": "place-andrw",
+    "70085": "place-jfk",
+    "70086": "place-jfk",
+    "70087": "place-shmnl",
+    "70088": "place-shmnl",
+    "70089": "place-fldcr",
+    "70090": "place-fldcr",
+    "70091": "place-smmnl",
+    "70092": "place-smmnl",
+    "70093": "place-asmnl",
+    "70094": "place-asmnl",
+    "70095": "place-jfk",
+    "70096": "place-jfk",
+    "70097": "place-nqncy",
+    "70098": "place-nqncy",
+    "70099": "place-wlsta",
+    "70100": "place-wlsta",
+    "70101": "place-qnctr",
+    "70102": "place-qnctr",
+    "70103": "place-qamnl",
+    "70104": "place-qamnl",
+    "70105": "place-brntn"
+  }
+}

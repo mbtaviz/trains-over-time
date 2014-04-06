@@ -1,0 +1,115 @@
+/* Add styles here TODO modify */
+
+body {
+  margin: 0 auto;
+  width: 1000px;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+  font-size: 20px;
+}
+
+svg {
+  font-size: 10px;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.info {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 2em;
+  font-size: 12px;
+  clear: both;
+  color: #777;
+}
+.right {
+  float: right;
+  clear: none;
+  position: relative;
+}
+.bar {
+  stroke: black;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+  font-weight: bold;
+}
+#marey {
+  height: 450px;
+  overflow: scroll;
+}
+.fadeout {
+  position: absolute;
+  bottom: 0;
+  height:10px;
+  width: 100%;
+  background: -webkit-linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+  ); 
+  background-image: -moz-linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+  );
+  background-image: -o-linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+  );
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+  );
+  background-image: -ms-linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+  );
+  z-index: 999;
+}
+.left {
+  float: left;
+  clear: none;
+}
+.connect {
+  stroke-width: 0.2;
+  stroke: black;
+}
+.station {
+  fill: gray;
+  opacity: 0.5;
+}
+line.station {
+  stroke-width: 1px;
+  stroke: gray;
+}
+.desc {
+  font-size: 12px;
+  line-height: 12px;
+}
+.blue {
+  fill: #2F5DA6;
+}
+.red {
+  fill: #E12D27;
+}
+.orange {
+  fill: #E87200;
+}
+path.blue {
+  stroke: #2F5DA6;
+  fill: none;
+}
+path.red {
+  stroke: #E12D27;
+  fill: none;
+}
+path.orange {
+  stroke: #E87200;
+  fill: none;
+}
+a {
+  text-decoration: none;
+}

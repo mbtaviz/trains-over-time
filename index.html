@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="bower_components/d3/d3.js"></script>
+    <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+    <script type="text/javascript" src="bower_components/momentjs/min/moment.min.js"></script>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@msb5014">
+    <meta name="twitter:title" content="Boston Subway Trains">
+    <meta name="twitter:description" content="An interactive visualization showing train locations for Boston's Red, Orange, and Blue subway lines for Tuesday February 4, 2014.">
+    <meta name="twitter:creator" content="@msb5014">
+    <meta name="twitter:image:src" content="http://mbtaviz.github.io/trains-over-time/preview.jpg">
+  
+    <link type="text/css" rel="stylesheet" href="main.css"/>
+    <title>A Week in the Life of the MBTA</title>
+  </head>
+  <body>
+    <div class="left">
+      <div id="chart"></div>
+      <div id="time">Loading...</div>
+    </div>
+    <div class="right">
+      <div id="marey"></div>
+      <div class="fadeout"></div>
+    </div>
+    <p class="info">
+      This graphic shows train locations on Boston's Red, Orange, and Blue Subway lines for Tuesday
+      February 4, 2014.  The left map shows train locations relative to stops along their line at 
+      a single point in time.  The right plot shows each station as a vertical line, with time going
+      from top to bottom.  Each horizontal slice shows where each train is at that point in time.
+      Hover over the right plot to show the train locations at that point in time.
+    </p>
+    <script type="text/javascript" src="marey.js"></script>
+    <script type="text/javascript" src="spider.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
