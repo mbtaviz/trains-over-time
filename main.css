@@ -2,7 +2,7 @@
 
 body {
   margin: 0 auto;
-  width: 1000px;
+  width: 1040px;
   text-align: center;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -27,8 +27,8 @@ svg {
   clear: both;
   color: #777;
 }
-.right {
-  float: right;
+.panel {
+  float: left;
   clear: none;
   position: relative;
 }
@@ -38,8 +38,15 @@ svg {
   shape-rendering: crispEdges;
   font-weight: bold;
 }
+#mareylegend,
+#mareyspacer {
+  height: 90px;
+}
+#mareylegend text {
+  font-size: 9px;
+}
 #marey {
-  height: 450px;
+  height: 300px;
   overflow: scroll;
 }
 .fadeout {
@@ -84,7 +91,26 @@ svg {
 line.station {
   stroke-width: 1px;
   stroke: gray;
+  shape-rendering: crispEdges;
 }
+
+.mareystop {
+  shape-rendering: crispEdges;
+}
+
+/* Make ends of line bolder */
+line.station.place-asmnl-red,
+/*line.station.place-alfcl-red,*/
+line.station.place-brntn-red,
+line.station.place-wondl-blue,
+line.station.place-bomnl-blue,
+line.station.place-forhl-orange,
+line.station.place-ogmnl-orange {
+  stroke-width: 1px;
+  stroke: black;
+  opacity: 0.75;
+}
+
 .desc {
   font-size: 12px;
   line-height: 12px;
@@ -110,6 +136,77 @@ path.orange {
   stroke: #E87200;
   fill: none;
 }
+.tiny path {
+  opacity: 0.2;
+}
+.tiny .bar {
+  opacity: 0.0;
+}
+.tiny rect.scroll {
+  stroke: none;
+  fill: gray;
+  opacity: 0.2;
+}
 a {
   text-decoration: none;
+}
+
+
+/* D3-tip styles */
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  pointer-events: none;
+  font-size: 10px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 15px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  pointer-events: none;
+}
+
+/* Northward tooltips */
+.d3-tip.n:after {
+  content: "\25BC";
+  margin: -3px 0 0 0;
+  top: 100%;
+  left: 0;
+  text-align: center;
+}
+
+/* Eastward tooltips */
+.d3-tip.e:after {
+  content: "\25C0";
+  margin: -4px 0 0 0;
+  top: 50%;
+  left: -8px;
+}
+
+/* Southward tooltips */
+.d3-tip.s:after {
+  content: "\25B2";
+  margin: 0 0 1px 0;
+  top: -8px;
+  left: 0;
+  text-align: center;
+}
+
+/* Westward tooltips */
+.d3-tip.w:after {
+  content: "\25B6";
+  margin: -4px 0 0 -1px;
+  top: 50%;
+  left: 100%;
 }

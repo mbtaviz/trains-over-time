@@ -3,6 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <script type="text/javascript" src="bower_components/d3/d3.js"></script>
+    <script type="text/javascript" src="bower_components/d3-tip/index.js"></script>
     <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
     <script type="text/javascript" src="bower_components/momentjs/min/moment.min.js"></script>
 
@@ -17,20 +18,26 @@
     <title>Boston Subway Marey Diagram</title>
   </head>
   <body>
-    <div class="left">
+    <div class="panel">
       <div id="chart"></div>
       <div id="time">Loading...</div>
     </div>
-    <div class="right">
+    <div class="panel">
+      <div id="mareylegend"></div>
       <div id="marey"></div>
       <div class="fadeout"></div>
+    </div>
+    <div class="panel">
+      <div id="mareyspacer"></div>
+      <div id="tinymarey"></div>
     </div>
     <p class="info">
       This graphic shows train locations on Boston's Red, Orange, and Blue Subway lines for Tuesday
       February 4, 2014.  The left map shows train locations relative to stops along their line at 
       a single point in time.  The right plot shows each station as a vertical line, with time going
       from top to bottom.  Each horizontal slice shows where each train is at that point in time.
-      Hover over the right plot to show the train locations at that point in time.
+      Slower trains have steeper lines.  Hover over the right plot to show the train locations
+      at that point in time.
     </p>
     <script type="text/javascript" src="marey.js"></script>
     <script type="text/javascript" src="spider.js"></script>

@@ -56,6 +56,12 @@
       .append('g')
         .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
+    var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .offset([-10, 0])
+        .html(function(d) { return d.name; });
+    svg.call(tip);
+
     svg.selectAll('.station')
         .data(inputData.nodes)
         .enter()
@@ -63,7 +69,9 @@
         .attr('class', function (d) { return 'station'; })
         .attr('cx', function (d) { return d.pos[0]; })
         .attr('cy', function (d) { return d.pos[1]; })
-        .attr('r', 2);
+        .attr('r', 2)
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide);
 
     svg.selectAll('.connect')
         .data(inputData.links)
