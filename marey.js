@@ -121,14 +121,14 @@ window.drawMarey = function (stationNetwork, trips) {
 
   // draw a dot at each train stop
   // TODO not sure if this is worth it?
-  svg.selectAll('.mareystop')
-      .data(_.flatten(trips.map(function (trip) { return trip.stops.map(function (stop) { stop.line = trip.line; return stop; }); })))
-      .enter()
-    .append('circle')
-      .attr('class', 'mareystop')
-      .attr('r', 1)
-      .attr('cx', function (stop) { return xScale(header[stop.stop + '|' + stop.line][0]); })
-      .attr('cy', function (stop) { return yScale(stop.time); });
+  // svg.selectAll('.mareystop')
+  //     .data(_.flatten(trips.map(function (trip) { return trip.stops.map(function (stop) { stop.line = trip.line; return stop; }); })))
+  //     .enter()
+  //   .append('circle')
+  //     .attr('class', 'mareystop')
+  //     .attr('r', 1)
+  //     .attr('cx', function (stop) { return xScale(header[stop.stop + '|' + stop.line][0]); })
+  //     .attr('cy', function (stop) { return yScale(stop.time); });
 
   // draw a line for each trip
   function draw(xScale, yScale) {
