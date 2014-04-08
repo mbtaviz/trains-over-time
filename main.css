@@ -45,6 +45,12 @@ svg {
 #mareylegend text {
   font-size: 9px;
 }
+.station-label {
+  opacity: 0.7;
+}
+text.station-label.active {
+  opacity: 1;
+}
 #marey {
   height: 300px;
   overflow: scroll;
@@ -84,9 +90,12 @@ svg {
   stroke-width: 0.5;
   stroke: black;
 }
-.station {
+circle.station.middle {
   fill: gray;
-  opacity: 0.5;
+  opacity: 0.3;
+}
+circle.station.end {
+  opacity: 0.8;
 }
 line.station {
   stroke-width: 1px;
@@ -117,12 +126,15 @@ line.station.place-ogmnl-orange {
 }
 .blue {
   fill: #2F5DA6;
+  stroke: #2F5DA6;
 }
 .red {
   fill: #E12D27;
+  stroke: #E12D27;
 }
 .orange {
   fill: #E87200;
+  stroke: #E87200;
 }
 path.blue {
   stroke: #2F5DA6;
@@ -147,6 +159,39 @@ path.orange {
   fill: gray;
   opacity: 0.2;
 }
+.text-background {
+  fill: white;
+  fill-opacity: 0.7;
+}
+#marey path.hover,
+#marey path.active {
+  stroke-width: 2px;
+}
+circle.hoverable {
+  stroke-opacity: 0;
+}
+circle.hover {
+  stroke-width: 25px;
+  stroke-opacity: 0.5;
+}
+.highlight-active circle {
+  stroke-opacity: 0;
+}
+.highlight-active circle.active {
+  stroke-width: 25px;
+  stroke-opacity: 0.5;
+}
+.highlight-active path.dimmable {
+  opacity: 0.2;
+}
+.highlight-active circle.dimmable {
+  opacity: 0.5;
+}
+.highlight-active .highlightable.active {
+  opacity: 1;
+}
+
+
 a {
   text-decoration: none;
 }
@@ -163,6 +208,7 @@ a {
   border-radius: 2px;
   pointer-events: none;
   font-size: 10px;
+  text-align: left;
 }
 
 /* Creates a small triangle extender for the tooltip */
@@ -189,9 +235,9 @@ a {
 /* Eastward tooltips */
 .d3-tip.e:after {
   content: "\25C0";
-  margin: -4px 0 0 0;
+  margin: -6px 0 0 0;
   top: 50%;
-  left: -8px;
+  left: -12px;
 }
 
 /* Southward tooltips */

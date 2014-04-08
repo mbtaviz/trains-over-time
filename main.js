@@ -2,7 +2,7 @@
   "use strict";
   var margin = {top: 10, right: 10, bottom: 10, left: 10},
       delay = 100,
-      radius = 2,
+      radius = 2.5,
       cache = {},
       idToLine = {},
       crowd = {},
@@ -66,12 +66,25 @@
         .data(inputData.nodes)
         .enter()
       .append('circle')
-        .attr('class', function (d) { return 'station'; })
+        .attr('class', function (d) { return 'station middle station-label ' + d.id; })
         .attr('cx', function (d) { return d.pos[0]; })
         .attr('cy', function (d) { return d.pos[1]; })
-        .attr('r', 2)
-        .on('mouseover', tip.show)
-        .on('mouseout', tip.hide);
+        .attr('r', 3)
+        .on('mouseover', function (d) {
+          if (d.pos[1] < 30) {
+            tip.direction('e')
+              .offset([0, 10]);
+          } else {
+            tip.direction('n')
+              .offset([-10, 0]);
+          }
+          tip.show(d);
+          window.highlightMareyTitle(d.id, _.unique(d.links.map(function (link) { return link.line; })));
+        })
+        .on('mouseout', function (d) {
+          tip.hide(d);
+          window.highlightMareyTitle(null);
+        });
 
     svg.selectAll('.connect')
         .data(inputData.links)
@@ -85,12 +98,11 @@
 
     // line color circles
     function dot(id, clazz) {
-      svg.append('circle')
-        .attr('cx', scale * spider[id][0])
-        .attr('cy', scale * spider[id][1])
-        .attr('class', clazz)
-        .attr('r', endDotRadius)
-        .attr('stroke', "none");
+      svg.selectAll('circle.' + id)
+        .classed(clazz, true)
+        .classed('end', true)
+        .classed('middle', false)
+        .attr('r', endDotRadius);
     }
     dot('place-asmnl', "red");
     dot('place-alfcl', "red");
@@ -125,10 +137,8 @@
       //   ...
       // ]
 
-      // animate train positions
-      var time = moment('2014-02-03 05:00 am -0500', 'YYYY-MM-DD hh:mm a ZZ');
-
-      function place(from, to, ratio) {
+      // show train positions
+      function placeWithOffset(from, to, ratio) {
         var fromPos = idToNode[from.stop].pos;
         var toPos = idToNode[to.stop].pos;
         var midpoint = d3.interpolate(fromPos, toPos)(ratio);
@@ -150,18 +160,23 @@
           var from = d.stops[i];
           var to = d.stops[i + 1];
           var ratio = (unixSeconds - from.time) / (to.time - from.time);
-          return {id: d.trip, pos: place(from, to, ratio), line: d.line};
+          return {trip: d.trip, pos: placeWithOffset(from, to, ratio), line: d.line};
         });
 
-        var trains = svg.selectAll('.train').data(positions, function (d) { return d.id; });
+        var trains = svg.selectAll('.train').data(positions, function (d) { return d.trip; });
         trains//.transition().duration(delay).ease('linear')
             .attr('cx', function (d) { return d.pos[0]; })
             .attr('cy', function (d) { return d.pos[1]; });
         trains.enter().append('circle')
-            .attr('class', function (d) { return 'train ' + d.line; })
+            .attr('class', function (d) { return 'train highlightable hoverable dimmable ' + d.line; })
+            .classed('active', function (d) { return d.trip === window.highlightedTrip; })
+            .classed('hover', function (d) { return d.trip === window.hoveredTrip; })
             .attr('r', radius)
             .attr('cx', function (d) { return d.pos[0]; })
-            .attr('cy', function (d) { return d.pos[1]; });
+            .attr('cy', function (d) { return d.pos[1]; })
+            .on('click', function (d) { window.highlightTrain(d); })
+            .on('mouseover', window.hoverTrain)
+            .on('mouseout', window.unHoverTrain);
         trains.exit().remove();
         timeDisplay.text(moment(unixSeconds * 1000).format('h:mm a'));
       }
