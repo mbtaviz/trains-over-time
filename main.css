@@ -184,6 +184,9 @@ circle.hover {
 .highlight-active path.dimmable {
   opacity: 0.2;
 }
+.highlight-active .tiny path {
+  opacity: 0.1;
+}
 .highlight-active circle.dimmable {
   opacity: 0.5;
 }
